@@ -63,7 +63,8 @@ try:
         mclk=board.GP20, #xc
         shutdown=None,
         reset=reset,
-        size=adafruit_ov5640.OV5640_SIZE_QQVGA
+        size=adafruit_ov5640.OV5640_SIZE_QQVGA,
+        mclk_frequency=16_000_000
     )
 
     print("chip id ", cam.chip_id)
